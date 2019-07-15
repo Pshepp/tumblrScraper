@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchor" fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Controller">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css">
+         <children>
+            <Label alignment="CENTER" layoutY="-4.0" prefHeight="31.0" prefWidth="600.0" style="-fx-text-fill: rgba(232,76,79,1);" text="MY NAME IS JEOFF SCRAPER" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+            </Label>
+            <Button id="submitBtn" fx:id="submitButton" layoutX="248.0" layoutY="297.0" mnemonicParsing="false" onAction="#startScrape" stylesheets="@Style.css" text="Start Scrape">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField id="urlIn" fx:id="tumblrURL" alignment="CENTER" focusTraversable="false" layoutX="23.0" layoutY="48.0" prefHeight="37.0" prefWidth="558.0" promptText="Enter Url" style="-fx-text-fill: rgba(232,76,79,1); -fx-prompt-text-fill: rgba(232,76,79,1);" stylesheets="@Style.css" text="http://animeburgers.tumblr.com/">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+            </TextField>
+            <TextField id="saveDir" fx:id="saveIn" focusTraversable="false" layoutX="137.0" layoutY="110.0" mouseTransparent="true" prefHeight="37.0" prefWidth="444.0" promptText="Default save path is desktop" style="-fx-text-fill: rgba(232,76,79,1); -fx-prompt-text-fill: rgba(232,76,79,1);" stylesheets="@Style.css">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </TextField>
+            <Button id="saveButton" fx:id="dirButton" layoutX="23.0" layoutY="116.0" mnemonicParsing="false" onAction="#viewDir" stylesheets="@Style.css" text="Save Location" />
+            <Button id="exitButton" fx:id="thinkButton" cancelButton="true" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="561.0" layoutY="-4.0" mnemonicParsing="false" onAction="#exit" prefHeight="37.0" prefWidth="39.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ProgressBar id="progressBar" fx:id="progBar" disable="true" layoutX="28.0" layoutY="303.0" prefHeight="25.0" prefWidth="549.0" progress="0.0" stylesheets="@Style.css" visible="false" />
+            <Text fx:id="textStuff" layoutX="150.0" layoutY="274.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: rgba(232,76,79,1);" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="305.13671875">
+               <font>
+                  <Font size="26.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

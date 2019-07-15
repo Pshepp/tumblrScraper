@@ -1,0 +1,65 @@
+#saveButton {
+	-fx-background-radius: 2; 
+	-fx-background-insets: 0; 
+	-fx-background-color: rgba(232,76,79,.7);
+}
+
+#saveButton:hover {	
+	-fx-background-color: rgba(9,123,124,.7);
+}
+
+#submitBtn {
+	-fx-background-radius: 2; 
+	-fx-background-insets: 0; 
+	-fx-background-color: rgba(232,76,79,0.7);
+}
+
+#submitBtn:hover {
+	-fx-background-color: rgba(9,123,124,0.7);
+}
+
+
+#urlIn {
+	-fx-background-color: rgba(0,0,0,0.5);
+}
+
+#saveDir {
+	-fx-background-color: rgba(0,0,0,0.5);
+}
+
+
+
+#exitButton {
+	-fx-background-size: cover; 
+	-fx-background-image: url(thinking.png); 
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+#tArea {
+		-fx-background-color: rgba(9,123,124,.2);
+}
+
+#tArea .content {
+		-fx-background-color: rgba(9,123,124,.2);
+}
+
+
+#exitButton:hover {
+	-fx-background-color: rgba(9,123,124,.7);
+}
+
+#anchor {
+	-fx-background-size: cover;
+	-fx-background-image: url(poopiepuss.gif); 
+}
+
+#progressBar .bar{
+	-fx-background-insets: 0, 0, 0, 0, 0;
+	-fx-background-color: rgba(232,76,79,0.8);
+	-fx-background-radius: 2; 
+}
+
+#progressBar .track {
+	-fx-background-insets: 0;
+	-fx-background-color: rgba(0,0,0,0);
+}
