@@ -172,7 +172,7 @@ public class ScraperThread implements Runnable {
 						instream = new URL(s).openStream();
 						Files.copy(instream, Paths.get(path.concat("/").concat(Integer.toString(i)).concat(".").concat(fileType)));
 					} catch (Exception ex) {
-						System.out.println("shits broke m8");
+						System.out.println("its broke m8");
 					}
 					i++;
 					progressProperty.set((double) i/totalPosts);
